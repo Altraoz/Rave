@@ -1,0 +1,14 @@
+@import "variables";
+@import "header";
+@import "main";
+@import "classes_mixing";
+@import "footer";
+
+body {
+  margin: 0;
+  font-family: "Anton", sans-serif;
+  background: $color_fondo;
+  color: $color_text;
+  font-size: 10;
+  line-height: 1.5;
+}

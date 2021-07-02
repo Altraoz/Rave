@@ -1,0 +1,129 @@
+header {
+  background: #1c1c38;
+  padding: 5px 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  left: 0;
+}
+
+header div nav {
+  margin: 0;
+  padding: 0;
+}
+
+header div nav ul {
+  list-style: none;
+}
+
+header div nav ul li {
+  display: inline-block;
+}
+
+header div nav ul li a {
+  color: #dfdfdf;
+  text-decoration: none;
+  display: block;
+  padding: 10px 30px;
+  border-radius: 10px;
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+
+header div nav ul li a:hover {
+  background-color: #1f1f3d;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+main {
+  display: inline-block;
+  text-align: justify;
+  padding-top: 90px;
+  padding-bottom: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main h1 {
+  font-size: 2;
+}
+
+main p {
+  margin-bottom: 1.2;
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo {
+  font-family: "Pacifico", cursive;
+  color: white;
+  text-decoration: none;
+  font-size: 50px;
+}
+
+body {
+  margin: 0;
+  font-family: "Anton", sans-serif;
+  background: #dfdfdf;
+  color: #353535;
+  font-size: 10;
+  line-height: 1.5;
+}
+
+.cuadro_1 {
+  background: white;
+  color: #353535;
+  width: 40%;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.2);
+  display: block;
+}
+
+.cuadro_2 {
+  background: white;
+  color: #353535;
+  width: 30%;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.2);
+  display: block;
+}
+
+footer {
+  background: #1c1c38;
+  padding: 100px;
+  color: beige;
+}
+
+body {
+  margin: 0;
+  font-family: "Anton", sans-serif;
+  background: #dfdfdf;
+  color: #353535;
+  font-size: 10;
+  line-height: 1.5;
+}
+/*# sourceMappingURL=styles.css.map */
