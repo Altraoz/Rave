@@ -1,129 +1,116 @@
-header {
-  background: #1c1c38;
-  padding: 5px 0;
-  position: fixed;
-  right: 0;
-  top: 0;
-  left: 0;
+:root {
+  --dark-cyan: hsl(185, 75%, 39%);
+  --very-dark: hsl(229, 23%, 23%);
+  --dark-gray: hsl(227, 10%, 46%);
+  --light-gray: hsl(227, 10%, 90%);
 }
 
-header div nav {
-  margin: 0;
-  padding: 0;
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 62.5%;
 }
 
-header div nav ul {
-  list-style: none;
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
 }
 
-header div nav ul li {
-  display: inline-block;
-}
-
-header div nav ul li a {
-  color: #dfdfdf;
-  text-decoration: none;
-  display: block;
-  padding: 10px 30px;
-  border-radius: 10px;
-  -webkit-transition: all 0.4s linear;
-  transition: all 0.4s linear;
-}
-
-header div nav ul li a:hover {
-  background-color: #1f1f3d;
-  -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear;
-}
-
-main {
-  display: inline-block;
-  text-align: justify;
-  padding-top: 90px;
-  padding-bottom: 200px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-main h1 {
-  font-size: 2;
-}
-
-main p {
-  margin-bottom: 1.2;
-}
-
-.container {
-  width: 85%;
-  margin: 0 auto;
-  padding: 0;
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  background-color: var(--dark-cyan);
+  background-image: url("../images/bg-pattern-top.svg"), url("../images/bg-pattern-bottom.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 50vw bottom 50vh, left 50vw top 50vh;
 }
 
 .flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 100vh;
 }
 
-.logo {
-  font-family: "Pacifico", cursive;
-  color: white;
-  text-decoration: none;
-  font-size: 50px;
+.card {
+  background-color: white;
+  border-radius: 20px;
+  overflow: hidden;
+  max-width: 320px;
+  -webkit-box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.315);
+          box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.315);
 }
 
-body {
-  margin: 0;
-  font-family: "Anton", sans-serif;
-  background: #dfdfdf;
-  color: #353535;
-  font-size: 10;
-  line-height: 1.5;
-}
-
-.cuadro_1 {
-  background: white;
-  color: #353535;
-  width: 40%;
-  margin: 0 auto;
-  padding: 20px;
-  border-radius: 5px;
-  -webkit-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.2);
+.card-header {
+  width: 100%;
   display: block;
 }
 
-.cuadro_2 {
-  background: white;
-  color: #353535;
-  width: 30%;
-  margin: 0 auto;
-  padding: 20px;
-  border-radius: 5px;
-  -webkit-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.2);
-  display: block;
+.card-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid var(--light-gray);
 }
 
-footer {
-  background: #1c1c38;
-  padding: 100px;
-  color: beige;
+.card-body-img {
+  border: 5px solid white;
+  background-color: white;
+  border-radius: 50%;
+  margin-top: calc(-48px - 5px);
 }
 
-body {
-  margin: 0;
-  font-family: "Anton", sans-serif;
-  background: #dfdfdf;
-  color: #353535;
-  font-size: 10;
-  line-height: 1.5;
+.card-body-tittle span {
+  color: var(--dark-gray);
+  font-weight: 400;
+}
+
+.card-body-text {
+  font-size: 1.7rem;
+  color: var(--dark-gray);
+  margin-bottom: 2rem;
+}
+
+.card-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.card-footer-social {
+  text-align: center;
+}
+
+.card-footer-social h3 {
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+  color: var(--very-dark);
+}
+
+.card-footer-social p {
+  margin-top: 0;
+  margin-bottom: 2rem;
+  letter-spacing: 1px;
+  color: var(--dark-gray);
+  font-weight: 700;
+  font-size: 1.2rem;
 }
 /*# sourceMappingURL=styles.css.map */
